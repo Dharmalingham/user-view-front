@@ -39,9 +39,13 @@ const Login = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-accent/20 animate-gradient" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent" />
       
-      <Card className="w-full max-w-md relative backdrop-blur-sm bg-card/50 border-border/50 shadow-2xl">
+      {/* Floating orbs */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-20 right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      
+      <Card className="w-full max-w-md relative backdrop-blur-sm bg-card/50 border-border/50 shadow-2xl animate-fade-in animate-glow-pulse">
         <CardHeader className="space-y-1 text-center">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/50">
+          <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/50 animate-float">
             <LockKeyhole className="w-8 h-8 text-primary-foreground" />
           </div>
           <CardTitle className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -64,7 +68,7 @@ const Login = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="pl-10 bg-background/50 border-border focus:border-primary transition-colors"
+                  className="pl-10 bg-background/50 border-border focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300"
                 />
               </div>
             </div>
@@ -79,13 +83,13 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="pl-10 bg-background/50 border-border focus:border-primary transition-colors"
+                  className="pl-10 bg-background/50 border-border focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300"
                 />
               </div>
             </div>
             <Button
               type="submit"
-              className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-all duration-300 shadow-lg shadow-primary/30 text-primary-foreground font-semibold"
+              className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg shadow-primary/30 text-primary-foreground font-semibold"
               disabled={isLoading}
             >
               {isLoading ? (
