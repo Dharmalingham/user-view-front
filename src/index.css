@@ -17,9 +17,9 @@ All colors MUST be HSL.
     --popover: 240 10% 6%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 142 76% 36%;
+    --primary: 262 83% 58%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 142 76% 46%;
+    --primary-glow: 270 91% 65%;
 
     --secondary: 240 5% 15%;
     --secondary-foreground: 0 0% 98%;
@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 240 5% 15%;
     --muted-foreground: 240 5% 64%;
 
-    --accent: 158 64% 52%;
+    --accent: 316 70% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -35,16 +35,16 @@ All colors MUST be HSL.
 
     --border: 240 5% 15%;
     --input: 240 5% 15%;
-    --ring: 142 76% 36%;
+    --ring: 262 83% 58%;
 
     --radius: 0.75rem;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(158 64% 52%));
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(316 70% 58%));
     --gradient-shine: linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent);
     
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(142 76% 36% / 0.3);
+    --shadow-glow: 0 0 40px hsl(262 83% 58% / 0.4);
     --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
     
     /* Animations */
@@ -77,7 +77,7 @@ All colors MUST be HSL.
     --popover: 240 10% 6%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 142 76% 36%;
+    --primary: 262 83% 58%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 240 5% 15%;
@@ -86,7 +86,7 @@ All colors MUST be HSL.
     --muted: 240 5% 15%;
     --muted-foreground: 240 5% 64%;
 
-    --accent: 158 64% 52%;
+    --accent: 316 70% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -94,7 +94,7 @@ All colors MUST be HSL.
 
     --border: 240 5% 15%;
     --input: 240 5% 15%;
-    --ring: 142 76% 36%;
+    --ring: 262 83% 58%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -128,8 +128,8 @@ All colors MUST be HSL.
   }
   
   @keyframes glow-pulse {
-    0%, 100% { box-shadow: 0 0 20px hsl(142 76% 36% / 0.3); }
-    50% { box-shadow: 0 0 40px hsl(142 76% 36% / 0.6); }
+    0%, 100% { box-shadow: 0 0 20px hsl(262 83% 58% / 0.4); }
+    50% { box-shadow: 0 0 50px hsl(262 83% 58% / 0.7); }
   }
 
   .animate-gradient {
